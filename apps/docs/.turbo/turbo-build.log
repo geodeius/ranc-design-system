@@ -1,0 +1,35 @@
+$ pnpm generate:ai && next build
+$ node --import tsx scripts/generate-ai-context.ts
+Generated 11 AI context artifacts from 8 pages, 1 component, 10 packages, and 0 tokens.
+▲ Next.js 16.2.12 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1758ms
+  Running TypeScript ...
+  Finished TypeScript in 2.1s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/15) ...
+  Generating static pages using 7 workers (3/15) 
+  Generating static pages using 7 workers (7/15) 
+  Generating static pages using 7 workers (11/15) 
+✓ Generating static pages using 7 workers (15/15) in 230ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ● /[...slug]
+│ ├ /getting-started/introduction
+│ ├ /foundations/color
+│ ├ /components/button
+│ └ [+5 more paths]
+├ ○ /components
+├ ● /components/category/[category]
+│ └ /components/category/actions
+├ ○ /packages
+└ ○ /tokens
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

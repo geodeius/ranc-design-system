@@ -1,0 +1,2 @@
+$ node --import tsx scripts/validate-registries.ts
+Validated 1 components, 10 packages, and 0 tokens.

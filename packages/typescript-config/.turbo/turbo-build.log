@@ -1,0 +1,1 @@
+$ node --check validate.mjs && node -e "const fs=require('node:fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('base.json','dist/base.json')"

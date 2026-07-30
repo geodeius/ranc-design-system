@@ -1,0 +1,1 @@
+$ eslint app components lib scripts tests next.config.ts
