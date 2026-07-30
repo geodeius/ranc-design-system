@@ -15,7 +15,7 @@ export interface TableOfContentsItem {
 
 export interface Breadcrumb {
   label: string;
-  url: string;
+  url: string | null;
 }
 
 export interface DocumentationPage {
@@ -85,7 +85,7 @@ function createBreadcrumbs(slug: string[], title: string): Breadcrumb[] {
     { label: 'Documentation', url: '/' },
     ...slug.map((segment, index) => ({
       label: index === slug.length - 1 ? title : titleCase(segment),
-      url: `/${slug.slice(0, index + 1).join('/')}`,
+      url: null,
     })),
   ];
 }

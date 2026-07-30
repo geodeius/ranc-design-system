@@ -48,6 +48,9 @@ jobs:
       - name: Validate content
         run: pnpm validate:content
 
+      - name: Validate internal links
+        run: pnpm validate:links
+
       - name: Validate registries
         run: pnpm validate:registries
 

@@ -2,6 +2,7 @@ node_modules/
 .pnpm-store/
 .next/
 .turbo/
+.vercel/
 dist/
 coverage/
 playwright-report/

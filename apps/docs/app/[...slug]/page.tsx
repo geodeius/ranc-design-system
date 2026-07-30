@@ -30,11 +30,13 @@ export default async function DocumentationPage({
         <nav aria-label="Breadcrumb">
           <ol className="breadcrumbs">
             {page.breadcrumbs.map((breadcrumb, index) => (
-              <li key={breadcrumb.url}>
+              <li key={`${breadcrumb.label}:${index}`}>
                 {index === page.breadcrumbs.length - 1 ? (
                   <span aria-current="page">{breadcrumb.label}</span>
-                ) : (
+                ) : breadcrumb.url ? (
                   <Link href={breadcrumb.url}>{breadcrumb.label}</Link>
+                ) : (
+                  <span>{breadcrumb.label}</span>
                 )}
               </li>
             ))}

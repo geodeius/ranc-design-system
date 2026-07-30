@@ -38,3 +38,23 @@ test('search requires every normalized query term to match', async () => {
   );
   assert.deepEqual(searchIndex(entries, 'not-a-real-result'), []);
 });
+
+test('every documentation page is represented in the search index', async () => {
+  const entries = await getSearchIndex();
+  const pageEntries = entries.filter((entry) => entry.kind === 'page');
+
+  assert.equal(pageEntries.length, 8);
+  assert.deepEqual(
+    pageEntries.map((entry) => entry.url),
+    [
+      '/getting-started/introduction',
+      '/foundations/color',
+      '/components/button',
+      '/patterns/empty-states',
+      '/engineering/architecture',
+      '/governance/governance',
+      '/releases/release-process',
+      '/templates/application-shell',
+    ],
+  );
+});

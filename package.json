@@ -21,6 +21,7 @@
     "validate:ai": "pnpm --filter @rancard/docs validate:ai",
     "validate:changesets": "node scripts/validate-changesets.mjs",
     "validate:content": "turbo run validate:content",
+    "validate:links": "turbo run validate:links",
     "validate:registries": "turbo run validate:registries",
     "validate:workspace": "node scripts/validate-workspace.mjs"
   },

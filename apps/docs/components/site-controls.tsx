@@ -149,7 +149,12 @@ export function SiteControls({
         onClick={cycleTheme}
         aria-label={`Theme: ${theme}. Activate to switch theme.`}
       >
-        {theme}
+        <span className="theme-label" aria-hidden="true">
+          {theme}
+        </span>
+        <span className="theme-icon" aria-hidden="true">
+          ◐
+        </span>
       </button>
 
       <dialog
