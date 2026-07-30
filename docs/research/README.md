@@ -1,10 +1,13 @@
 # Stage 1 Research and Audit
 
-Status: Active
+Status: Complete
 
 This directory is the working area for Stage 1 of the Rancard Design System
 roadmap. Stage 1 records the current product ecosystem before any foundation,
 token, theme, or component contract is proposed.
+
+The stakeholder-approved outcome and accepted limitations are recorded in
+`stage-1-conclusion.md`.
 
 ## Scope
 
