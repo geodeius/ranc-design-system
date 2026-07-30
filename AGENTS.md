@@ -30,6 +30,7 @@ docs/planning/14-architecture-decision-records.md
 
 ## Source-of-Truth Rules
 
+- Never assume a component, property, token, or package exists unless it is present in the registry or source code.
 - Never assume a component exists unless it appears in the component registry or source code.
 - Never assume a token exists unless it appears in the token registry or source code.
 - Never invent package exports.
@@ -99,3 +100,15 @@ When a request conflicts with an approved ADR or planning document:
 3. Propose an ADR update.
 4. Explain consequences.
 5. Implement only after the decision is resolved.
+
+<!-- BEGIN GENERATED REPOSITORY INVENTORY -->
+## Generated Repository Inventory
+
+- Documentation pages: 8
+- Registered components: 1
+- Registered packages: 10
+- Registered tokens: 0
+- Search entries: 88
+
+This inventory is derived from validated MDX and registry sources. Regenerate it with `pnpm generate:ai`.
+<!-- END GENERATED REPOSITORY INVENTORY -->

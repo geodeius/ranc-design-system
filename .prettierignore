@@ -4,6 +4,7 @@ node_modules/
 dist/
 coverage/
 apps/docs/next-env.d.ts
+apps/docs/public/ai/*.json
 pnpm-lock.yaml
 AGENTS.md
 CLAUDE.md
