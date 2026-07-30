@@ -1,18 +1,28 @@
 # Rancard Design System
 
-The Rancard Design System repository is currently in **Phase Zero**. This phase builds the platform, governance, and engineering foundation before production tokens, components, or Figma assets.
+The Rancard Design System repository has completed **Phase Zero** and is
+currently in **Stage 1 — Research and Audit**. Stage 1 documents the existing
+product ecosystem before production tokens, components, or Figma assets are
+defined.
 
-## Phase 1 status
+## Platform status
 
-The repository foundation contains:
+The Phase Zero platform contains:
 
 - a pnpm workspace managed by Turborepo;
-- private placeholder applications for documentation and the playground;
-- private placeholder package boundaries;
+- a deployable documentation application and playground foundation;
+- private planned package boundaries;
 - shared strict TypeScript and ESLint configuration;
-- formatting, Changesets, CI, and workspace validation.
+- validated documentation and registries;
+- search and AI-readable repository context;
+- governance, Changesets, CI, deployment, and quality validation.
 
-All package implementations are marked **Planned**. Empty entry points reserve explicit boundaries without creating stable APIs.
+Package implementations remain **Planned**. Their explicit boundaries do not
+create stable production APIs.
+
+Stage 1 work is tracked in
+[docs/research/README.md](./docs/research/README.md). Research templates are not
+approved design-system specifications.
 
 ## Development
 
