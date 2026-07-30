@@ -1,4 +1,3 @@
-import { StatusBadge } from '../../components/status-badge';
 import { getTokenRegistry } from '../../lib/registries';
 
 export default async function TokensPage() {
@@ -7,7 +6,6 @@ export default async function TokensPage() {
   return (
     <article>
       <header className="document-header">
-        <StatusBadge status="experimental" />
         <h1>Tokens</h1>
         <p className="description">
           The validated token registry intentionally contains no entries until

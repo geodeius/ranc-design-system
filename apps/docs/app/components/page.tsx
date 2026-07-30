@@ -1,5 +1,4 @@
 import { ComponentRegistryOverview } from '../../components/component-registry-overview';
-import { StatusBadge } from '../../components/status-badge';
 import { getComponentRegistry } from '../../lib/registries';
 
 export default async function ComponentsPage() {
@@ -8,7 +7,6 @@ export default async function ComponentsPage() {
   return (
     <article>
       <header className="document-header">
-        <StatusBadge status="experimental" />
         <h1>Components</h1>
         <p className="description">
           A registry-backed view of documented component work. Entries describe
