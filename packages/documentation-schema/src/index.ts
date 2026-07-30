@@ -76,11 +76,45 @@ export const tokenRegistryEntrySchema = z.strictObject({
   owners: z.array(ownerSchema).min(1),
 });
 
+function uniqueByName<T extends { name: string }>(
+  entries: T[],
+  context: z.RefinementCtx,
+) {
+  const names = new Map<string, number>();
+  entries.forEach((entry, index) => {
+    const previousIndex = names.get(entry.name);
+    if (previousIndex !== undefined) {
+      context.addIssue({
+        code: 'custom',
+        message: `Duplicate registry name "${entry.name}" (first declared at index ${previousIndex}).`,
+        path: [index, 'name'],
+      });
+    } else {
+      names.set(entry.name, index);
+    }
+  });
+}
+
+export const componentRegistrySchema = z
+  .array(componentRegistryEntrySchema)
+  .superRefine(uniqueByName);
+export const packageRegistrySchema = z
+  .array(packageRegistryEntrySchema)
+  .superRefine(uniqueByName);
+export const tokenRegistrySchema = z
+  .array(tokenRegistryEntrySchema)
+  .superRefine(uniqueByName);
+
 export type GeneralPageFrontmatter = z.infer<typeof generalPageSchema>;
 export type ComponentPageFrontmatter = z.infer<typeof componentPageSchema>;
 export type FoundationPageFrontmatter = z.infer<typeof foundationPageSchema>;
 export type PageFrontmatter =
   GeneralPageFrontmatter | ComponentPageFrontmatter | FoundationPageFrontmatter;
+export type ComponentRegistryEntry = z.infer<
+  typeof componentRegistryEntrySchema
+>;
+export type PackageRegistryEntry = z.infer<typeof packageRegistryEntrySchema>;
+export type TokenRegistryEntry = z.infer<typeof tokenRegistryEntrySchema>;
 
 export function formatValidationError(
   source: string,
@@ -112,6 +146,19 @@ export function parsePageFrontmatter(
         ? foundationPageSchema
         : generalPageSchema;
 
+  const result = schema.safeParse(value);
+  if (!result.success) {
+    throw new Error(formatValidationError(source, result.error));
+  }
+
+  return result.data;
+}
+
+export function parseRegistry<T>(
+  schema: z.ZodType<T>,
+  value: unknown,
+  source: string,
+): T {
   const result = schema.safeParse(value);
   if (!result.success) {
     throw new Error(formatValidationError(source, result.error));

@@ -12,7 +12,8 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "test:accessibility": "playwright test",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "validate:content": "node --import tsx scripts/validate-content.ts"
+    "validate:content": "node --import tsx scripts/validate-content.ts",
+    "validate:registries": "node --import tsx scripts/validate-registries.ts"
   },
   "dependencies": {
     "@rancard/documentation-schema": "workspace:*",

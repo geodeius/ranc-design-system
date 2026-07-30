@@ -23,6 +23,10 @@
     "validate:content": {
       "dependsOn": ["^build"],
       "outputs": []
+    },
+    "validate:registries": {
+      "dependsOn": ["^build"],
+      "outputs": []
     }
   }
 }

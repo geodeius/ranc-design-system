@@ -57,3 +57,46 @@ test('mobile navigation and theme controls remain available', async ({
   ).toBeVisible();
   await expectNoAccessibilityViolations(page);
 });
+
+test('registry overview filters remain accessible', async ({ page }) => {
+  await page.goto('/components');
+  await expect(
+    page.getByRole('heading', { name: 'Components', level: 1 }),
+  ).toBeVisible();
+  await expect(page.getByText('Showing 1 of 1 components.')).toBeVisible();
+
+  await page.getByLabel('Platform').selectOption('web');
+  await expect(
+    page.getByRole('main').getByRole('link', { name: 'Button' }),
+  ).toBeVisible();
+  await expectNoAccessibilityViolations(page);
+});
+
+test('command palette includes package registry metadata', async ({ page }) => {
+  await page.goto('/components');
+  await page.keyboard.press('ControlOrMeta+k');
+  const search = page.getByRole('combobox', {
+    name: /search documentation pages/i,
+  });
+  await search.fill('@rancard/react-native');
+
+  await expect(page.locator('.command-results a[data-active]')).toContainText(
+    '@rancard/react-native',
+  );
+});
+
+test('representative Phase 5 content sections meet the accessibility baseline', async ({
+  page,
+}) => {
+  for (const route of [
+    '/patterns/empty-states',
+    '/engineering/architecture',
+    '/governance/governance',
+    '/releases/release-process',
+    '/templates/application-shell',
+  ]) {
+    await page.goto(route);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expectNoAccessibilityViolations(page);
+  }
+});

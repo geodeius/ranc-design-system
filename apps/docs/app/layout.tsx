@@ -6,6 +6,7 @@ import type { ReactNode } from 'react';
 import { DocumentNavigation } from '../components/document-navigation';
 import { SiteControls } from '../components/site-controls';
 import { getNavigation } from '../lib/content';
+import { getRegistrySearchEntries } from '../lib/registries';
 
 export const metadata: Metadata = {
   description: 'Documentation platform for the planned Rancard Design System.',
@@ -20,7 +21,10 @@ export default async function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  const navigation = await getNavigation();
+  const [navigation, registrySearchEntries] = await Promise.all([
+    getNavigation(),
+    getRegistrySearchEntries(),
+  ]);
 
   return (
     <html lang="en">
@@ -39,7 +43,10 @@ export default async function RootLayout({
                 <span className="site-name">Rancard Design System</span>
               </span>
             </a>
-            <SiteControls navigation={navigation} />
+            <SiteControls
+              navigation={navigation}
+              registrySearchEntries={registrySearchEntries}
+            />
           </div>
         </header>
         <div className="page-frame">
