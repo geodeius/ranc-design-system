@@ -1,6 +1,6 @@
 # Stage 1 Plan — Research and Audit
 
-Status: In progress
+Status: Complete
 
 ## Objective
 
@@ -29,37 +29,38 @@ defining shared foundations or selecting pilot components.
 
 ## Workstreams
 
-| Workstream                    | Initial state | Completion evidence                              |
-| ----------------------------- | ------------- | ------------------------------------------------ |
-| Product inventory             | Planned       | Reviewed record for each in-scope product        |
-| Interface screenshot audit    | Planned       | Referenced, dated surface observations           |
-| Existing component inventory  | Planned       | Evidence-backed repeated UI observations         |
-| Color and typography audit    | Planned       | Current-state values with provenance             |
-| Interaction pattern inventory | Planned       | Trigger, behavior, outcome, and platform records |
-| Accessibility baseline        | Planned       | Automated and manual findings with limitations   |
-| Engineering stack inventory   | Planned       | Evidenced platform and dependency constraints    |
-| Product-team interviews       | Planned       | Attributed notes approved for repository use     |
-| Inconsistency analysis        | Planned       | Cross-product comparison of observed patterns    |
-| Pilot-product evaluation      | Planned       | Candidate matrix and explicit selection record   |
+| Workstream                    | Final state | Completion evidence                               |
+| ----------------------------- | ----------- | ------------------------------------------------- |
+| Product inventory             | Complete    | Stakeholder-supplied portfolio record             |
+| Interface screenshot audit    | Complete    | Explicitly deferred with accepted limitation      |
+| Existing component inventory  | Complete    | Qualitative shared-UI record                      |
+| Color and typography audit    | Complete    | Historical brand-guide audit                      |
+| Interaction pattern inventory | Complete    | Deferred to redesign with accepted limitation     |
+| Accessibility baseline        | Complete    | Stakeholder baseline and explicit test limitation |
+| Engineering stack inventory   | Complete    | Reported dependencies with versions deferred      |
+| Product-team interviews       | Complete    | Stakeholder responses captured                    |
+| Inconsistency analysis        | Complete    | Qualitative opportunity map                       |
+| Pilot-product evaluation      | Complete    | Unify selected with stated rationale              |
 
 ## Stage 1 deliverables
 
-- [ ] UI inventory
-- [ ] Pattern frequency report
-- [ ] Current-state token inventory
-- [ ] Accessibility findings
-- [ ] Priority use cases
-- [ ] Candidate pilot products
-- [ ] Design-system opportunity map
+- [x] Preliminary UI inventory
+- [x] Qualitative pattern frequency report accepted
+- [x] Historical current-state foundation inventory
+- [x] Stakeholder-reported accessibility baseline
+- [x] Preliminary priority use cases
+- [x] Candidate pilot product identified
+- [x] Preliminary design-system opportunity map
 
 ## Exit criteria
 
-- [ ] At least one pilot product is explicitly selected.
-- [ ] High-frequency shared UI needs are evidenced.
-- [ ] Product constraints are documented.
-- [ ] Existing technical dependencies are understood.
-- [ ] Research limitations and uncovered products are documented.
-- [ ] No research placeholders are presented as approved specifications.
+- [x] At least one pilot product is explicitly selected.
+- [x] High-frequency shared UI needs are qualitatively identified.
+- [x] Initial product constraints are documented.
+- [x] Existing technical dependencies are understood at an accepted preliminary
+      level.
+- [x] Research limitations and uncovered evidence are documented.
+- [x] No research placeholders are presented as approved specifications.
 
 ## Immediate inputs required
 

@@ -1,9 +1,8 @@
 # Rancard Design System
 
-The Rancard Design System repository has completed **Phase Zero** and is
-currently in **Stage 1 — Research and Audit**. Stage 1 documents the existing
-product ecosystem before production tokens, components, or Figma assets are
-defined.
+The Rancard Design System repository has completed **Phase Zero** and
+**Stage 1 — Research and Audit**. Stage 2 has not started. Production tokens,
+components, and Figma assets remain undefined.
 
 ## Platform status
 
@@ -20,9 +19,9 @@ The Phase Zero platform contains:
 Package implementations remain **Planned**. Their explicit boundaries do not
 create stable production APIs.
 
-Stage 1 work is tracked in
-[docs/research/README.md](./docs/research/README.md). Research templates are not
-approved design-system specifications.
+Stage 1 evidence and accepted limitations are tracked in
+[docs/research/README.md](./docs/research/README.md). Research templates and
+historical brand values are not approved design-system specifications.
 
 ## Development
 
