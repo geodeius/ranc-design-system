@@ -1,0 +1,40 @@
+name: Component request
+description: Propose a recurring, cross-product component need.
+title: '[Component request]: '
+labels:
+  - component-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A request is evidence for investigation, not approval of a component or API.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Shared problem
+      description: Describe the recurring user or product need without prescribing an API.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reuse evidence
+      description: Identify affected products, repeated implementations, or research.
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility considerations
+      description: Record known keyboard, assistive technology, content, or interaction needs.
+    validations:
+      required: true
+  - type: dropdown
+    id: lifecycle
+    attributes:
+      label: Requested lifecycle
+      description: Requests enter the system as Planned; this does not approve admission.
+      options:
+        - Planned
+    validations:
+      required: true

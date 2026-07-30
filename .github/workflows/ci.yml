@@ -54,6 +54,9 @@ jobs:
       - name: Validate AI context
         run: pnpm validate:ai
 
+      - name: Validate package release intent
+        run: pnpm validate:changesets
+
       - name: Build
         run: pnpm build
 
