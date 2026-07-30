@@ -1,0 +1,15 @@
+[
+  {
+    "name": "button",
+    "displayName": "Button",
+    "category": "actions",
+    "status": "planned",
+    "packages": {
+      "react": "@rancard/react"
+    },
+    "platforms": ["web"],
+    "figma": null,
+    "documentation": "/components/button",
+    "owners": ["design-systems"]
+  }
+]
