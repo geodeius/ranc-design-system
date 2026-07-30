@@ -1,0 +1,51 @@
+# Rancard Design System
+
+> AI entry point for coding agents.
+
+## Current Phase
+
+Phase Zero — Build the documentation platform, repository architecture, governance, schemas, registries, and tooling before creating production tokens or components.
+
+## Read First
+
+1. AGENTS.md
+2. docs/planning/README.md
+3. docs/planning/01-objectives-and-success-criteria.md
+4. docs/planning/02-technical-architecture.md
+5. docs/planning/07-implementation-phases.md
+6. docs/planning/08-codex-operating-rules.md
+7. docs/planning/11-final-deliverables-and-readiness-gates.md
+8. docs/planning/12-design-principles.md
+9. docs/planning/13-roadmap.md
+10. docs/planning/14-architecture-decision-records.md
+
+## Repository Goals
+
+- Build a scalable design system platform.
+- Keep documentation as the source of truth.
+- Generate navigation and metadata from registries.
+- Be accessible by default.
+- Be understandable by both humans and AI agents.
+
+## Constraints
+
+- Do not invent production components.
+- Do not invent token values.
+- Do not invent package APIs.
+- Use registries as the source of truth.
+- Use `--docs-*` variables only for temporary documentation styling.
+- Keep builds, linting, tests, and type checking passing.
+
+## Planned Packages
+
+- @rancard/react
+- @rancard/react-native
+- @rancard/tokens
+- @rancard/themes
+- @rancard/icons
+- @rancard/css
+- @rancard/cli
+
+## Lifecycle
+
+Planned → Experimental → Alpha → Beta → Stable → Deprecated → Removed
