@@ -49,3 +49,15 @@ Phase Zero — Build the documentation platform, repository architecture, govern
 ## Lifecycle
 
 Planned → Experimental → Alpha → Beta → Stable → Deprecated → Removed
+
+<!-- BEGIN GENERATED REPOSITORY INVENTORY -->
+## Generated Repository Inventory
+
+- Documentation pages: 8
+- Registered components: 1
+- Registered packages: 10
+- Registered tokens: 0
+- Search entries: 88
+
+This inventory is derived from validated MDX and registry sources. Regenerate it with `pnpm generate:ai`.
+<!-- END GENERATED REPOSITORY INVENTORY -->

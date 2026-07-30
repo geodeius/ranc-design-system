@@ -105,6 +105,12 @@ export const tokenRegistrySchema = z
   .array(tokenRegistryEntrySchema)
   .superRefine(uniqueByName);
 
+export function getTokenRegistryJsonSchema(): Record<string, unknown> {
+  return z.toJSONSchema(tokenRegistrySchema, {
+    target: 'draft-7',
+  }) as Record<string, unknown>;
+}
+
 export type GeneralPageFrontmatter = z.infer<typeof generalPageSchema>;
 export type ComponentPageFrontmatter = z.infer<typeof componentPageSchema>;
 export type FoundationPageFrontmatter = z.infer<typeof foundationPageSchema>;

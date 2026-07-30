@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "group": {
+        "type": "string",
+        "minLength": 1
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "planned",
+          "experimental",
+          "alpha",
+          "beta",
+          "stable",
+          "deprecated",
+          "removed"
+        ]
+      },
+      "platforms": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "owners": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "required": [
+      "name",
+      "group",
+      "status",
+      "platforms",
+      "owners"
+    ],
+    "additionalProperties": false
+  }
+}

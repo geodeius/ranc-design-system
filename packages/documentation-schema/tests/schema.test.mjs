@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   componentRegistryEntrySchema,
   componentRegistrySchema,
+  getTokenRegistryJsonSchema,
   lifecycleStatusSchema,
   packageRegistryEntrySchema,
   parsePageFrontmatter,
@@ -138,4 +139,18 @@ test('rejects duplicate registry names with an actionable path', () => {
   assert.equal(result.success, false);
   assert.deepEqual(result.error.issues[0].path, [1, 'name']);
   assert.match(result.error.issues[0].message, /Duplicate registry name/);
+});
+
+test('exports the token registry schema for machine consumers', () => {
+  const schema = getTokenRegistryJsonSchema();
+
+  assert.equal(schema.type, 'array');
+  assert.equal(schema.items.type, 'object');
+  assert.deepEqual(schema.items.required, [
+    'name',
+    'group',
+    'status',
+    'platforms',
+    'owners',
+  ]);
 });

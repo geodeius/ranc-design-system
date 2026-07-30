@@ -85,6 +85,41 @@ test('command palette includes package registry metadata', async ({ page }) => {
   );
 });
 
+test('command palette finds and identifies document headings', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Find a page' }).click();
+  const search = page.getByRole('combobox', {
+    name: /search documentation pages/i,
+  });
+  await search.fill('button accessibility');
+
+  const result = page.locator('.command-results a[data-active]');
+  await expect(result).toContainText('Accessibility');
+  await expect(result).toContainText('Heading');
+  await expect(result).toHaveAttribute(
+    'href',
+    '/components/button#accessibility',
+  );
+});
+
+test('command palette announces an actionable zero-result state', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Find a page' }).click();
+  await page
+    .getByRole('combobox', { name: /search documentation pages/i })
+    .fill('not-a-real-result');
+
+  await expect(page.getByText('No page matches')).toBeVisible();
+  await expect(
+    page.getByText('Try a page title, heading, package, or status.'),
+  ).toBeVisible();
+  await expectNoAccessibilityViolations(page);
+});
+
 test('representative Phase 5 content sections meet the accessibility baseline', async ({
   page,
 }) => {

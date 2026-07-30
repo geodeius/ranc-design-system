@@ -51,6 +51,9 @@ jobs:
       - name: Validate registries
         run: pnpm validate:registries
 
+      - name: Validate AI context
+        run: pnpm validate:ai
+
       - name: Build
         run: pnpm build
 

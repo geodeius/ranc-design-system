@@ -6,7 +6,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { DocumentNavigation } from './document-navigation';
 
 import type { NavigationGroup } from '../lib/content';
-import type { RegistrySearchEntry } from '../lib/registries';
+import { searchIndex as filterSearchIndex } from '../lib/search-filter';
+import type { SearchEntry } from '../lib/search-filter';
 import type { KeyboardEvent as ReactKeyboardEvent } from 'react';
 
 type Theme = 'system' | 'light' | 'dark';
@@ -21,10 +22,10 @@ function applyTheme(theme: Theme) {
 
 export function SiteControls({
   navigation,
-  registrySearchEntries,
+  searchIndex,
 }: {
   navigation: NavigationGroup[];
-  registrySearchEntries: RegistrySearchEntry[];
+  searchIndex: SearchEntry[];
 }) {
   const mobileDialog = useRef<HTMLDialogElement>(null);
   const commandDialog = useRef<HTMLDialogElement>(null);
@@ -35,37 +36,9 @@ export function SiteControls({
   const [theme, setTheme] = useState<Theme>('system');
   const [activeResult, setActiveResult] = useState(0);
 
-  const pages = useMemo(() => {
-    const entries = navigation.flatMap((group) =>
-      group.pages.map((page) => ({
-        category: group.label,
-        description: page.frontmatter.description,
-        status: page.frontmatter.status,
-        title: page.frontmatter.title,
-        url: page.url,
-      })),
-    );
-
-    for (const registryEntry of registrySearchEntries) {
-      const existingIndex = entries.findIndex(
-        (entry) =>
-          entry.url === registryEntry.url &&
-          entry.title === registryEntry.title,
-      );
-      if (existingIndex >= 0) {
-        entries[existingIndex] = registryEntry;
-      } else {
-        entries.push(registryEntry);
-      }
-    }
-
-    return entries;
-  }, [navigation, registrySearchEntries]);
-
-  const results = pages.filter((page) =>
-    `${page.title} ${page.category} ${page.description} ${page.status}`
-      .toLowerCase()
-      .includes(query.toLowerCase()),
+  const results = useMemo(
+    () => filterSearchIndex(searchIndex, query),
+    [query, searchIndex],
   );
 
   useEffect(() => {
@@ -246,20 +219,25 @@ export function SiteControls({
             }
           />
         </label>
-        <div className="command-results" aria-live="polite">
+        <div
+          id="command-results"
+          className="command-results"
+          aria-live="polite"
+        >
           {results.length > 0 ? (
-            <ul id="command-results" aria-label="Documentation pages">
-              {results.map((page, index) => (
-                <li key={page.url}>
+            <ul aria-label="Documentation pages">
+              {results.map((result, index) => (
+                <li key={`${result.kind}:${result.url}`}>
                   <Link
                     id={`command-result-${index}`}
-                    href={page.url}
+                    href={result.url}
                     onClick={closeCommandPalette}
                     data-active={index === activeResult ? '' : undefined}
                   >
-                    <span>{page.title}</span>
+                    <span>{result.title}</span>
                     <small>
-                      {page.category} · {page.status}
+                      {result.category} · {result.status}
+                      {result.kind === 'heading' ? ' · Heading' : ''}
                     </small>
                   </Link>
                 </li>
@@ -269,7 +247,7 @@ export function SiteControls({
             <div className="empty-state">
               <span aria-hidden="true">↳</span>
               <p>No page matches “{query}” yet.</p>
-              <small>More content arrives in Phase 5.</small>
+              <small>Try a page title, heading, package, or status.</small>
             </div>
           )}
         </div>

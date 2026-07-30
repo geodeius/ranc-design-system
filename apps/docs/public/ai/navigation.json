@@ -1,0 +1,90 @@
+[
+  {
+    "label": "Getting Started",
+    "pages": [
+      {
+        "description": "An introduction to the Phase Zero Rancard Design System platform.",
+        "status": "experimental",
+        "title": "Introduction",
+        "url": "/getting-started/introduction"
+      }
+    ]
+  },
+  {
+    "label": "Foundations",
+    "pages": [
+      {
+        "description": "Placeholder documentation for the future color foundation.",
+        "status": "planned",
+        "title": "Color",
+        "url": "/foundations/color"
+      }
+    ]
+  },
+  {
+    "label": "Components",
+    "pages": [
+      {
+        "description": "Placeholder documentation that validates the future component-page structure.",
+        "status": "planned",
+        "title": "Button",
+        "url": "/components/button"
+      }
+    ]
+  },
+  {
+    "label": "Patterns",
+    "pages": [
+      {
+        "description": "Placeholder structure for documenting shared experience patterns.",
+        "status": "planned",
+        "title": "Empty States",
+        "url": "/patterns/empty-states"
+      }
+    ]
+  },
+  {
+    "label": "Engineering",
+    "pages": [
+      {
+        "description": "Draft engineering overview of the Phase Zero repository platform.",
+        "status": "experimental",
+        "title": "Architecture",
+        "url": "/engineering/architecture"
+      }
+    ]
+  },
+  {
+    "label": "Governance",
+    "pages": [
+      {
+        "description": "Draft responsibilities and decision flow for the design-system platform.",
+        "status": "experimental",
+        "title": "Governance",
+        "url": "/governance/governance"
+      }
+    ]
+  },
+  {
+    "label": "Releases",
+    "pages": [
+      {
+        "description": "Placeholder release documentation for future design-system packages.",
+        "status": "planned",
+        "title": "Release Process",
+        "url": "/releases/release-process"
+      }
+    ]
+  },
+  {
+    "label": "Templates",
+    "pages": [
+      {
+        "description": "Placeholder template page for a future shared application structure.",
+        "status": "planned",
+        "title": "Application Shell",
+        "url": "/templates/application-shell"
+      }
+    ]
+  }
+]

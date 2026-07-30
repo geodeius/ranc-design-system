@@ -1,0 +1,706 @@
+[
+  {
+    "category": "Getting Started",
+    "description": "An introduction to the Phase Zero Rancard Design System platform.",
+    "kind": "page",
+    "status": "experimental",
+    "title": "Introduction",
+    "url": "/getting-started/introduction"
+  },
+  {
+    "category": "Getting Started · Introduction",
+    "description": "Section in Introduction",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "What exists today",
+    "url": "/getting-started/introduction#what-exists-today"
+  },
+  {
+    "category": "Getting Started · Introduction",
+    "description": "Section in Introduction",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "How to read this documentation",
+    "url": "/getting-started/introduction#how-to-read-this-documentation"
+  },
+  {
+    "category": "Foundations",
+    "description": "Placeholder documentation for the future color foundation.",
+    "kind": "page",
+    "status": "planned",
+    "title": "Color",
+    "url": "/foundations/color"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Current status",
+    "url": "/foundations/color#current-status"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Purpose",
+    "url": "/foundations/color#purpose"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Naming approach",
+    "url": "/foundations/color#naming-approach"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Expected token hierarchy",
+    "url": "/foundations/color#expected-token-hierarchy"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Platform considerations",
+    "url": "/foundations/color#platform-considerations"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Accessibility considerations",
+    "url": "/foundations/color#accessibility-considerations"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Figma mapping",
+    "url": "/foundations/color#figma-mapping"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Code mapping",
+    "url": "/foundations/color#code-mapping"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Current implementation status",
+    "url": "/foundations/color#current-implementation-status"
+  },
+  {
+    "category": "Foundations · Color",
+    "description": "Section in Color",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Readiness requirements",
+    "url": "/foundations/color#readiness-requirements"
+  },
+  {
+    "category": "Component · actions",
+    "description": "web · planned",
+    "kind": "page",
+    "status": "planned",
+    "title": "Button",
+    "url": "/components/button"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Current status",
+    "url": "/components/button#current-status"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Overview",
+    "url": "/components/button#overview"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "When to use",
+    "url": "/components/button#when-to-use"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "When not to use",
+    "url": "/components/button#when-not-to-use"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Anatomy",
+    "url": "/components/button#anatomy"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Variants",
+    "url": "/components/button#variants"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Sizes",
+    "url": "/components/button#sizes"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "States",
+    "url": "/components/button#states"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Behavior",
+    "url": "/components/button#behavior"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Content guidelines",
+    "url": "/components/button#content-guidelines"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Accessibility",
+    "url": "/components/button#accessibility"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Responsive behavior",
+    "url": "/components/button#responsive-behavior"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Internationalization",
+    "url": "/components/button#internationalization"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Theming",
+    "url": "/components/button#theming"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "API reference",
+    "url": "/components/button#api-reference"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Code examples",
+    "url": "/components/button#code-examples"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Figma guidance",
+    "url": "/components/button#figma-guidance"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Related components",
+    "url": "/components/button#related-components"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Known limitations",
+    "url": "/components/button#known-limitations"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Changelog",
+    "url": "/components/button#changelog"
+  },
+  {
+    "category": "Components · Button",
+    "description": "Section in Button",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Documentation contract",
+    "url": "/components/button#documentation-contract"
+  },
+  {
+    "category": "Patterns",
+    "description": "Placeholder structure for documenting shared experience patterns.",
+    "kind": "page",
+    "status": "planned",
+    "title": "Empty States",
+    "url": "/patterns/empty-states"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Problem",
+    "url": "/patterns/empty-states#problem"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "When to use",
+    "url": "/patterns/empty-states#when-to-use"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Experience principles",
+    "url": "/patterns/empty-states#experience-principles"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Structure",
+    "url": "/patterns/empty-states#structure"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Content guidance",
+    "url": "/patterns/empty-states#content-guidance"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Accessibility",
+    "url": "/patterns/empty-states#accessibility"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Responsive behavior",
+    "url": "/patterns/empty-states#responsive-behavior"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Related components",
+    "url": "/patterns/empty-states#related-components"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Examples",
+    "url": "/patterns/empty-states#examples"
+  },
+  {
+    "category": "Patterns · Empty States",
+    "description": "Section in Empty States",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Known limitations",
+    "url": "/patterns/empty-states#known-limitations"
+  },
+  {
+    "category": "Engineering",
+    "description": "Draft engineering overview of the Phase Zero repository platform.",
+    "kind": "page",
+    "status": "experimental",
+    "title": "Architecture",
+    "url": "/engineering/architecture"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Monorepo structure",
+    "url": "/engineering/architecture#monorepo-structure"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Package boundaries",
+    "url": "/engineering/architecture#package-boundaries"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Build pipeline",
+    "url": "/engineering/architecture#build-pipeline"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Documentation pipeline",
+    "url": "/engineering/architecture#documentation-pipeline"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Testing expectations",
+    "url": "/engineering/architecture#testing-expectations"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Publishing status",
+    "url": "/engineering/architecture#publishing-status"
+  },
+  {
+    "category": "Engineering · Architecture",
+    "description": "Section in Architecture",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Future decisions",
+    "url": "/engineering/architecture#future-decisions"
+  },
+  {
+    "category": "Governance",
+    "description": "Draft responsibilities and decision flow for the design-system platform.",
+    "kind": "page",
+    "status": "experimental",
+    "title": "Governance",
+    "url": "/governance/governance"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Core-team responsibilities",
+    "url": "/governance/governance#core-team-responsibilities"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Contributor responsibilities",
+    "url": "/governance/governance#contributor-responsibilities"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Product-team responsibilities",
+    "url": "/governance/governance#product-team-responsibilities"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Required review disciplines",
+    "url": "/governance/governance#required-review-disciplines"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Decision flow",
+    "url": "/governance/governance#decision-flow"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Architecture decisions",
+    "url": "/governance/governance#architecture-decisions"
+  },
+  {
+    "category": "Governance · Governance",
+    "description": "Section in Governance",
+    "kind": "heading",
+    "status": "experimental",
+    "title": "Ownership status",
+    "url": "/governance/governance#ownership-status"
+  },
+  {
+    "category": "Releases",
+    "description": "Placeholder release documentation for future design-system packages.",
+    "kind": "page",
+    "status": "planned",
+    "title": "Release Process",
+    "url": "/releases/release-process"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Versioning model",
+    "url": "/releases/release-process#versioning-model"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Change intent",
+    "url": "/releases/release-process#change-intent"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Release checks",
+    "url": "/releases/release-process#release-checks"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Changelogs",
+    "url": "/releases/release-process#changelogs"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Deprecation",
+    "url": "/releases/release-process#deprecation"
+  },
+  {
+    "category": "Releases · Release Process",
+    "description": "Section in Release Process",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Publication status",
+    "url": "/releases/release-process#publication-status"
+  },
+  {
+    "category": "Templates",
+    "description": "Placeholder template page for a future shared application structure.",
+    "kind": "page",
+    "status": "planned",
+    "title": "Application Shell",
+    "url": "/templates/application-shell"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Purpose",
+    "url": "/templates/application-shell#purpose"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Required evidence",
+    "url": "/templates/application-shell#required-evidence"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Structure",
+    "url": "/templates/application-shell#structure"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Responsive behavior",
+    "url": "/templates/application-shell#responsive-behavior"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Accessibility",
+    "url": "/templates/application-shell#accessibility"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Related patterns and components",
+    "url": "/templates/application-shell#related-patterns-and-components"
+  },
+  {
+    "category": "Templates · Application Shell",
+    "description": "Section in Application Shell",
+    "kind": "heading",
+    "status": "planned",
+    "title": "Implementation status",
+    "url": "/templates/application-shell#implementation-status"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/cli",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/css",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/documentation-schema",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/eslint-config",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/icons",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/react",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/react-native",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/themes",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/tokens",
+    "url": "/packages",
+    "kind": "registry"
+  },
+  {
+    "category": "Package",
+    "description": "Private · planned",
+    "status": "planned",
+    "title": "@rancard/typescript-config",
+    "url": "/packages",
+    "kind": "registry"
+  }
+]

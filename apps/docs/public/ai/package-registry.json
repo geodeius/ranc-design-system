@@ -1,0 +1,92 @@
+[
+  {
+    "name": "@rancard/cli",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/css",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/documentation-schema",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/eslint-config",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/icons",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/react",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/react-native",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/themes",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/tokens",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  },
+  {
+    "name": "@rancard/typescript-config",
+    "status": "planned",
+    "private": true,
+    "documentation": null,
+    "owners": [
+      "design-systems"
+    ]
+  }
+]
