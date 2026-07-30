@@ -7,7 +7,6 @@ export default async function PackagesPage() {
   return (
     <article>
       <header className="document-header">
-        <StatusBadge status="experimental" />
         <h1>Packages</h1>
         <p className="description">
           Planned workspace packages validated against their manifests. All

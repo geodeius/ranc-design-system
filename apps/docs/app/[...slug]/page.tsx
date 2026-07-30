@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import rehypeSlug from 'rehype-slug';
 
-import { StatusBadge } from '../../components/status-badge';
 import { getAdjacentPages, getAllPages, getPage } from '../../lib/content';
 
 interface DocumentationPageProps {
@@ -44,7 +43,6 @@ export default async function DocumentationPage({
         </nav>
 
         <header className="document-header">
-          <StatusBadge status={page.frontmatter.status} />
           <h1>{page.frontmatter.title}</h1>
           <p className="description">{page.frontmatter.description}</p>
         </header>

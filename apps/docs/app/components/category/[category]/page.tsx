@@ -25,7 +25,6 @@ export default async function ComponentCategoryPage({
   return (
     <article>
       <header className="document-header">
-        <StatusBadge status="experimental" />
         <h1>{category}</h1>
         <p className="description">
           Components in this generated registry category.
