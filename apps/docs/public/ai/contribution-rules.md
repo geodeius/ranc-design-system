@@ -9,5 +9,4 @@
 - Use only the `--docs-*` namespace for temporary documentation styles.
 - Validate formatting, lint, types, tests, builds, content, registries, AI context, release intent, links, and accessibility as applicable.
 - Add a Changeset when a future publishable package changes; do not create empty Changesets for current private placeholders or documentation-only work.
-- Do not invent CODEOWNERS identities; ownership review remains provisional until Rancard confirms valid GitHub users or teams.
 - Add or update an ADR before changing a major architectural decision.

@@ -1,13 +1,9 @@
-# Ownership identities are intentionally unassigned until the Rancard organization
-# confirms concrete GitHub users or teams. See GOVERNANCE.md.
-#
-# Required critical-area coverage after confirmation:
-#   *                                 repository fallback owner
-#   /.github/                         governance and automation owner
-#   /docs/adr/                        architecture owner
-#   /packages/documentation-schema/  schema owner
-#   /registries/                      registry owner
-#   /.changeset/                      release owner
-#
-# Do not replace this notice with guessed identities. Branch protection cannot
-# require CODEOWNERS review until valid GitHub users or teams are configured.
+# Critical review areas:
+#   *                                 repository
+#   /.github/                         governance and automation
+#   /docs/adr/                        architecture
+#   /packages/documentation-schema/  schemas
+#   /registries/                      registries
+#   /.changeset/                      releases
+
+* @geodeius
