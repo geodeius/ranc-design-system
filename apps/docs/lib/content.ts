@@ -131,7 +131,7 @@ export async function getNavigation(): Promise<NavigationGroup[]> {
   const groups = new Map<string, NavigationGroup>();
 
   for (const page of pages) {
-    const key = page.frontmatter.category;
+    const key = page.slug[0] ?? page.frontmatter.category;
     const group = groups.get(key) ?? { label: titleCase(key), pages: [] };
     group.pages.push({ frontmatter: page.frontmatter, url: page.url });
     groups.set(key, group);

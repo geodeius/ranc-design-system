@@ -1,0 +1,46 @@
+---
+title: Architecture
+description: Draft engineering overview of the Phase Zero repository platform.
+category: engineering
+status: experimental
+order: 20
+owners:
+  - design-systems
+lastReviewed: 2026-07-30
+tags:
+  - engineering
+  - architecture
+  - monorepo
+---
+
+**Draft**
+
+The repository platform is operational, while production design-system packages remain private placeholders.
+
+## Monorepo structure
+
+Applications live under `apps/`, packages under `packages/`, authored documentation under `content/`, and validated metadata under `registries/`.
+
+## Package boundaries
+
+Workspace packages expose only the placeholder exports declared in their manifests. New dependencies and exports require explicit source changes and validation.
+
+## Build pipeline
+
+pnpm coordinates workspaces and Turborepo wires build, lint, typecheck, test, content validation, and registry validation tasks.
+
+## Documentation pipeline
+
+Next.js statically renders validated MDX content and registry-backed overview routes. Zod schemas reject invalid metadata before deployment.
+
+## Testing expectations
+
+Changes must preserve unit, type, build, browser, responsive, and accessibility baselines appropriate to their scope.
+
+## Publishing status
+
+Publishing is prohibited during Phase Zero. Package versions and placeholder entry points are not stable APIs.
+
+## Future decisions
+
+Production token consumption, component API conventions, release permissions, and platform transformations remain gated by later stages and accepted ADRs.

@@ -84,3 +84,19 @@ test('command palette includes package registry metadata', async ({ page }) => {
     '@rancard/react-native',
   );
 });
+
+test('representative Phase 5 content sections meet the accessibility baseline', async ({
+  page,
+}) => {
+  for (const route of [
+    '/patterns/empty-states',
+    '/engineering/architecture',
+    '/governance/governance',
+    '/releases/release-process',
+    '/templates/application-shell',
+  ]) {
+    await page.goto(route);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expectNoAccessibilityViolations(page);
+  }
+});
