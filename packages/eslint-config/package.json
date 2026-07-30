@@ -1,0 +1,30 @@
+{
+  "name": "@rancard/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "node --check index.js && node -e \"const fs=require('node:fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('index.js','dist/index.js')\"",
+    "clean": "node -e \"import('node:fs').then(({rmSync})=>rmSync('dist',{recursive:true,force:true}))\"",
+    "lint": "eslint .",
+    "test": "node --test",
+    "typecheck": "node --check index.js"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "rancard": {
+    "owners": [
+      "design-systems"
+    ],
+    "status": "planned"
+  }
+}

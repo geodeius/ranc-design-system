@@ -1,0 +1,25 @@
+{
+  "name": "@rancard/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./base.json": "./base.json"
+  },
+  "files": [
+    "base.json"
+  ],
+  "scripts": {
+    "build": "node --check validate.mjs && node -e \"const fs=require('node:fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('base.json','dist/base.json')\"",
+    "clean": "node -e \"import('node:fs').then(({rmSync})=>rmSync('dist',{recursive:true,force:true}))\"",
+    "lint": "eslint .",
+    "test": "node --test",
+    "typecheck": "node --check validate.mjs"
+  },
+  "rancard": {
+    "owners": [
+      "design-systems"
+    ],
+    "status": "planned"
+  }
+}
