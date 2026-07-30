@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import {
   componentRegistryEntrySchema,
+  componentRegistrySchema,
   lifecycleStatusSchema,
   packageRegistryEntrySchema,
   parsePageFrontmatter,
@@ -118,4 +119,23 @@ test('validates the planned registry entry shapes', () => {
     }).success,
     true,
   );
+});
+
+test('rejects duplicate registry names with an actionable path', () => {
+  const entry = {
+    name: 'button',
+    displayName: 'Button',
+    category: 'actions',
+    status: 'planned',
+    packages: { react: '@rancard/react' },
+    platforms: ['web'],
+    figma: null,
+    documentation: '/components/button',
+    owners: ['design-systems'],
+  };
+
+  const result = componentRegistrySchema.safeParse([entry, entry]);
+  assert.equal(result.success, false);
+  assert.deepEqual(result.error.issues[0].path, [1, 'name']);
+  assert.match(result.error.issues[0].message, /Duplicate registry name/);
 });
