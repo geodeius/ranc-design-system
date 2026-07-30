@@ -6,19 +6,19 @@
 
 ## Current results
 
-| Area                     | Status                 | Evidence                                                                                    |
-| ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------- |
-| Production build         | Passing                | Next.js generates 15 routes through the monorepo build                                      |
-| Content validation       | Passing                | Eight MDX pages validate against repository schemas                                         |
-| Registry integrity       | Passing                | One component, ten packages, and zero tokens validate                                       |
-| Internal links           | Passing                | Authored MDX links, anchors, and registry documentation targets are checked in CI           |
-| Search indexing          | Passing                | Every validated documentation page is represented in the generated index                    |
-| Accessibility automation | Passing                | Desktop and mobile Chromium run axe against representative routes and interactions          |
-| Responsive baseline      | Passing locally        | Core routes are checked at 320 CSS pixels for horizontal page overflow                      |
-| Performance baseline     | Passing locally        | Component documentation stays below 1,200 DOM elements and 750 KB transferred script budget |
-| AI context freshness     | Passing                | Eleven generated artifacts are checked for drift before and after builds                    |
-| Vercel integration       | Passing                | GitHub records a successful deployment; core routes and generated AI assets return HTTP 200 |
-| Pull-request preview     | Pending Phase 8 PR     | Push this branch and open a pull request to verify its Vercel preview check and URL          |
+| Area                     | Status             | Evidence                                                                                    |
+| ------------------------ | ------------------ | ------------------------------------------------------------------------------------------- |
+| Production build         | Passing            | Next.js generates 15 routes through the monorepo build                                      |
+| Content validation       | Passing            | Eight MDX pages validate against repository schemas                                         |
+| Registry integrity       | Passing            | One component, ten packages, and zero tokens validate                                       |
+| Internal links           | Passing            | Authored MDX links, anchors, and registry documentation targets are checked in CI           |
+| Search indexing          | Passing            | Every validated documentation page is represented in the generated index                    |
+| Accessibility automation | Passing            | Desktop and mobile Chromium run axe against representative routes and interactions          |
+| Responsive baseline      | Passing locally    | Core routes are checked at 320 CSS pixels for horizontal page overflow                      |
+| Performance baseline     | Passing locally    | Component documentation stays below 1,200 DOM elements and 750 KB transferred script budget |
+| AI context freshness     | Passing            | Eleven generated artifacts are checked for drift before and after builds                    |
+| Vercel integration       | Passing            | GitHub records a successful deployment; core routes and generated AI assets return HTTP 200 |
+| Pull-request preview     | Pending Phase 8 PR | Push this branch and open a pull request to verify its Vercel preview check and URL         |
 
 ## Defects corrected during audit
 
