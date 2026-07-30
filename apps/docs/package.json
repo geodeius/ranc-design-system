@@ -15,6 +15,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "validate:ai": "node --import tsx scripts/generate-ai-context.ts --check",
     "validate:content": "node --import tsx scripts/validate-content.ts",
+    "validate:links": "node --import tsx scripts/validate-links.ts",
     "validate:registries": "node --import tsx scripts/validate-registries.ts"
   },
   "dependencies": {

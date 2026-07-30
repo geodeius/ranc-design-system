@@ -184,6 +184,10 @@ button:active {
   gap: 0.55rem;
 }
 
+.theme-icon {
+  display: none;
+}
+
 .control-button,
 .search-trigger,
 .icon-button {
@@ -704,6 +708,10 @@ dialog[open] {
   margin: 1rem 0 0.3rem;
 }
 
+.registry-grid h2 code {
+  overflow-wrap: anywhere;
+}
+
 .registry-grid p,
 .registry-empty p {
   color: var(--docs-text-muted);
@@ -795,6 +803,22 @@ dialog[open] {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem 1.1rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .brand > span:last-child,
+  .theme-label {
+    display: none;
+  }
+
+  .theme-icon {
+    display: inline;
+  }
+
+  .theme-trigger {
+    min-width: 2.4rem;
+    padding: 0 0.55rem;
   }
 }
 

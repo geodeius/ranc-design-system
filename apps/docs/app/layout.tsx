@@ -3,6 +3,7 @@ import './styles.css';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
+import { AgentationToolbar } from '../components/agentation-toolbar';
 import { DocumentNavigation } from '../components/document-navigation';
 import { SiteControls } from '../components/site-controls';
 import { getNavigation } from '../lib/content';
@@ -34,7 +35,11 @@ export default async function RootLayout({
         </a>
         <header className="site-header">
           <div className="site-header-inner">
-            <a className="brand" href="/getting-started/introduction">
+            <a
+              className="brand"
+              href="/getting-started/introduction"
+              aria-label="Rancard Design System home"
+            >
               <span className="brand-mark" aria-hidden="true">
                 R
               </span>
@@ -61,6 +66,7 @@ export default async function RootLayout({
           </div>
           <a href="/getting-started/introduction">Back to introduction ↑</a>
         </footer>
+        <AgentationToolbar />
       </body>
     </html>
   );
