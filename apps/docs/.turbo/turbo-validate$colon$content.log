@@ -1,0 +1,2 @@
+$ node --import tsx scripts/validate-content.ts
+Validated 8 MDX pages.

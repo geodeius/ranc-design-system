@@ -1,0 +1,1 @@
+$ node --check index.js && node -e "const fs=require('node:fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('index.js','dist/index.js')"

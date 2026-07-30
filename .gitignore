@@ -1,11 +1,5 @@
-node_modules/
-.pnpm-store/
-.next/
+node_modules
+
+# Build and Turborepo caches
 .turbo/
-.vercel/
-dist/
-coverage/
-playwright-report/
-test-results/
-*.tsbuildinfo
-.DS_Store
+**/.next/

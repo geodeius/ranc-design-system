@@ -1,0 +1,2 @@
+$ node --import tsx scripts/validate-links.ts
+Validated internal documentation and registry links.

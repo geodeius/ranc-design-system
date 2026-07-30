@@ -1,0 +1,21 @@
+$ node --import tsx --test tests/*.test.ts
+✔ loads and validates every MDX page (28.909833ms)
+✔ derives routes, breadcrumbs, headings, and navigation from metadata (6.872208ms)
+✔ representative placeholder sections remain clearly labeled (4.842625ms)
+✔ derives previous and next links from validated page order (7.300333ms)
+✔ extracts root-relative and same-page links without external URLs (0.941ms)
+✔ reports missing internal routes and anchors with their source (0.102083ms)
+✔ validated content and registry relationships contain no broken links (17.8285ms)
+✔ loads the authoritative registries (13.785375ms)
+✔ registry relationships match documentation and package manifests (15.045542ms)
+✔ registry metadata contributes searchable entries (1.534375ms)
+✔ builds one search index from documentation headings and registries (26.991042ms)
+✔ search requires every normalized query term to match (4.528708ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 417.150625

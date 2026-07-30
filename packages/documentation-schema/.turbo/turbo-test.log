@@ -1,0 +1,15 @@
+$ node --test tests/*.test.mjs
+✔ accepts the canonical lifecycle statuses (1.612042ms)
+✔ parses general, component, and foundation page metadata (1.97625ms)
+✔ returns actionable source and field paths for invalid metadata (0.422916ms)
+✔ validates the planned registry entry shapes (0.739709ms)
+✔ rejects duplicate registry names with an actionable path (0.9365ms)
+✔ exports the token registry schema for machine consumers (0.899959ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 110.081334
