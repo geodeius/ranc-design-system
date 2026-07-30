@@ -1,0 +1,40 @@
+name: Foundation change
+description: Propose research into a shared visual or behavioral foundation.
+title: '[Foundation]: '
+labels:
+  - foundation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include final token values or treat this proposal as an approved specification.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and evidence
+      description: Explain the shared need and the products or platforms affected.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed research scope
+      description: Identify the foundation area and questions to investigate.
+    validations:
+      required: true
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms to evaluate
+      options:
+        - label: Web
+        - label: iOS
+        - label: Android
+        - label: Figma
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility risks
+      description: Describe contrast, motion, zoom, input, or assistive-technology concerns.
+    validations:
+      required: true

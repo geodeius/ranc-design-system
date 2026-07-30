@@ -1,0 +1,43 @@
+name: Accessibility issue
+description: Report an accessibility barrier in the platform or documented system.
+title: '[Accessibility]: '
+labels:
+  - accessibility
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Affected location
+      description: Provide the route, component name, or repository path.
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Barrier
+      description: Describe the task, expected outcome, and observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include browser, operating system, input method, and assistive technology where relevant.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: User impact
+      options:
+        - Blocks a task
+        - Makes a task difficult
+        - Causes confusion
+        - Needs investigation
+    validations:
+      required: true
+  - type: textarea
+    id: standard
+    attributes:
+      label: Related requirement
+      description: Optional WCAG criterion, platform guidance, or test evidence.
