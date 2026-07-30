@@ -42,8 +42,6 @@ pnpm changeset:status
 
 An issue or pull request does not approve a token, component, API, package export, owner, or lifecycle change.
 
-Until concrete CODEOWNERS identities and branch protection are configured, a repository administrator must verify the required review disciplines manually. This provisional process does not satisfy the final ownership-enforcement gate.
-
 ## Changesets
 
 Changesets are required when a change affects a publishable package. Current private placeholder packages are deliberately excluded from versioning and publication. Infrastructure and documentation changes do not need empty changesets.
@@ -57,5 +55,3 @@ Changesets are required when a change affects a publishable package. Current pri
 - Add or update an ADR before changing a major architectural convention.
 - Add a changeset only when a future versioned package is affected.
 - Do not publish packages during Phase Zero.
-
-Ownership and review assignments remain provisional until the Rancard Design System core team confirms GitHub identities.
