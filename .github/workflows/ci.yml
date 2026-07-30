@@ -51,6 +51,12 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Install accessibility test browser
+        run: pnpm --filter @rancard/docs exec playwright install --with-deps chromium
+
+      - name: Check documentation accessibility
+        run: pnpm accessibility:check
+
       - name: Validate workspace
         run: pnpm validate:workspace
 

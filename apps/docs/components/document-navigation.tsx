@@ -1,14 +1,23 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import { getNavigation } from '../lib/content';
+import type { NavigationGroup } from '../lib/content';
 
-export async function DocumentNavigation() {
-  const groups = await getNavigation();
+export function DocumentNavigation({
+  navigation,
+  onNavigate,
+}: {
+  navigation: NavigationGroup[];
+  onNavigate?: () => void;
+}) {
+  const pathname = usePathname();
 
   return (
-    <nav aria-label="Documentation">
-      <p className="navigation-label">Documentation</p>
-      {groups.map((group) => {
+    <nav className="document-navigation" aria-label="Documentation">
+      <p className="navigation-label">Explore</p>
+      {navigation.map((group) => {
         const headingId = `nav-${group.label
           .toLowerCase()
           .replaceAll(' ', '-')}`;
@@ -19,7 +28,13 @@ export async function DocumentNavigation() {
             <ul>
               {group.pages.map((page) => (
                 <li key={page.url}>
-                  <Link href={page.url}>{page.frontmatter.title}</Link>
+                  <Link
+                    aria-current={pathname === page.url ? 'page' : undefined}
+                    href={page.url}
+                    {...(onNavigate ? { onClick: onNavigate } : {})}
+                  >
+                    {page.frontmatter.title}
+                  </Link>
                 </li>
               ))}
             </ul>
